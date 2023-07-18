@@ -1,6 +1,6 @@
 package Seminar_2.Task_4;
 
-public class Test_4_Main {
+public class Task_4_Main {
 
     public static void main(String[] args) {
         
