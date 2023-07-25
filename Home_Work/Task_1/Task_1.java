@@ -49,22 +49,22 @@ public class Task_1 implements InterfaceMINMAX_2 {
         }
         // Если я правильно понял задание под цифрой 3
         // Collections.sort(list, new Comparator<Integer>() {
-        //     public int compare(Integer str, Integer str1) {
-        //         return (str).compareTo(str1);
-        //     }
+        // public int compare(Integer str, Integer str1) {
+        // return (str).compareTo(str1);
+        // }
         // });
-        
-        // Тоже самое но уже через лямбда 
+
+        // Тоже самое но уже через лямбда
         list.sort((num1, num2) -> num1 - num2);
-        
+
         for (Integer integer : list) {
             for (Map.Entry<String, Integer> entry : map.entrySet()) {
                 if (entry.getValue().equals(integer)) {
                     sortedMap.put(entry.getKey(), integer);
                 }
-
+                
             }
-
+            
         }
         System.out.println(sortedMap);
 
