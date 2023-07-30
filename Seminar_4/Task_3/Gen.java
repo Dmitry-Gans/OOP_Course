@@ -22,16 +22,16 @@ class UseTest {
         A a = new A();
         B b = new B();
         C c = new C();
-        D d = new D();
+        // D d = new D();
 
         Gen<A> ga = new Gen<A>(a);
         Gen<B> gb = new Gen<B>(b);
         Gen<C> gc = new Gen<C>(c);
-        Gen<D> gd = new Gen<D>(d);
+        // Gen<D> gd = new Gen<D>(d);
 
         test(ga);
         test(gc);
         test(gb);
-        test(gd);
+        // test(gd);
     }
 }
