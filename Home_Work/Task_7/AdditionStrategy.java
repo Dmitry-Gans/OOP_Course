@@ -1,0 +1,10 @@
+package Home_Work.Task_7;
+
+public class AdditionStrategy implements CalculationStrategy {
+    public ComplexNumber calculate(ComplexNumber num1, ComplexNumber num2) {
+        double real = num1.getRealPart() + num2.getRealPart();
+        double imaginary = num1.getImaginaryPart() + num2.getImaginaryPart();
+        return new SimpleComplexNumber(real, imaginary);
+    }
+
+}
